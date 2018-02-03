@@ -12,6 +12,7 @@
 		30A8AF3D20253A7600888FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A8AF3B20253A7600888FE6 /* Main.storyboard */; };
 		30A8AF3F20253A7600888FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A8AF3E20253A7600888FE6 /* Assets.xcassets */; };
 		30A8AF4220253A7600888FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A8AF4020253A7600888FE6 /* LaunchScreen.storyboard */; };
+		30A8AF4B20253D8000888FE6 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF4A20253D8000888FE6 /* model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		30A8AF3E20253A7600888FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A8AF4120253A7600888FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30A8AF4320253A7600888FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30A8AF4A20253D8000888FE6 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		30A8AF3620253A7600888FE6 /* MyBusTime */ = {
 			isa = PBXGroup;
 			children = (
-				30A8AF3720253A7600888FE6 /* AppDelegate.swift */,
-				30A8AF3920253A7600888FE6 /* ViewController.swift */,
-				30A8AF3B20253A7600888FE6 /* Main.storyboard */,
+				30A8AF4920253B2B00888FE6 /* models */,
+				30A8AF4C20253D8C00888FE6 /* controllers */,
+				30A8AF4D20253D9E00888FE6 /* views */,
 				30A8AF3E20253A7600888FE6 /* Assets.xcassets */,
+				30A8AF3720253A7600888FE6 /* AppDelegate.swift */,
 				30A8AF4020253A7600888FE6 /* LaunchScreen.storyboard */,
 				30A8AF4320253A7600888FE6 /* Info.plist */,
 			);
 			path = MyBusTime;
+			sourceTree = "<group>";
+		};
+		30A8AF4920253B2B00888FE6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				30A8AF4A20253D8000888FE6 /* model.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		30A8AF4C20253D8C00888FE6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30A8AF3920253A7600888FE6 /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		30A8AF4D20253D9E00888FE6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				30A8AF3B20253A7600888FE6 /* Main.storyboard */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A8AF3A20253A7600888FE6 /* ViewController.swift in Sources */,
+				30A8AF4B20253D8000888FE6 /* model.swift in Sources */,
 				30A8AF3820253A7600888FE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
