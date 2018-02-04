@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3055C3C420269A48003A44BD /* businfo.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3055C3C320269A48003A44BD /* businfo.csv */; };
 		30A8AF3820253A7600888FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF3720253A7600888FE6 /* AppDelegate.swift */; };
-		30A8AF3A20253A7600888FE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF3920253A7600888FE6 /* ViewController.swift */; };
+		30A8AF3A20253A7600888FE6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF3920253A7600888FE6 /* TableViewController.swift */; };
 		30A8AF3D20253A7600888FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A8AF3B20253A7600888FE6 /* Main.storyboard */; };
 		30A8AF3F20253A7600888FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A8AF3E20253A7600888FE6 /* Assets.xcassets */; };
 		30A8AF4220253A7600888FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A8AF4020253A7600888FE6 /* LaunchScreen.storyboard */; };
 		30A8AF4B20253D8000888FE6 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF4A20253D8000888FE6 /* model.swift */; };
+		30A8AF4F2025B38600888FE6 /* busInfoBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF4E2025B38600888FE6 /* busInfoBank.swift */; };
+		30A8AF522025B96300888FE6 /* BusInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF502025B96300888FE6 /* BusInfoTableViewCell.swift */; };
+		30A8AF532025B96300888FE6 /* BusInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A8AF512025B96300888FE6 /* BusInfoTableViewCell.xib */; };
+		A6C0A3D6A9E98F09C8B89A09 /* Pods_MyBusTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59332357731D1AEA211C16FF /* Pods_MyBusTime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274C0637BA4672C54DFB00A8 /* Pods-MyBusTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBusTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyBusTime/Pods-MyBusTime.debug.xcconfig"; sourceTree = "<group>"; };
+		3055C3C320269A48003A44BD /* businfo.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = businfo.csv; sourceTree = "<group>"; };
 		30A8AF3420253A7600888FE6 /* MyBusTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBusTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A8AF3720253A7600888FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30A8AF3920253A7600888FE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30A8AF3920253A7600888FE6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		30A8AF3C20253A7600888FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30A8AF3E20253A7600888FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A8AF4120253A7600888FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30A8AF4320253A7600888FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A8AF4A20253D8000888FE6 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		30A8AF4E2025B38600888FE6 /* busInfoBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = busInfoBank.swift; sourceTree = "<group>"; };
+		30A8AF502025B96300888FE6 /* BusInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoTableViewCell.swift; sourceTree = "<group>"; };
+		30A8AF512025B96300888FE6 /* BusInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusInfoTableViewCell.xib; sourceTree = "<group>"; };
+		59332357731D1AEA211C16FF /* Pods_MyBusTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBusTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F67337FF6EB3C38B7707288 /* Pods-MyBusTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBusTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyBusTime/Pods-MyBusTime.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C0A3D6A9E98F09C8B89A09 /* Pods_MyBusTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A0507B90CD21A3179B006B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59332357731D1AEA211C16FF /* Pods_MyBusTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		30A8AF2B20253A7600888FE6 = {
 			isa = PBXGroup;
 			children = (
 				30A8AF3620253A7600888FE6 /* MyBusTime */,
 				30A8AF3520253A7600888FE6 /* Products */,
+				D6D1A9E962D5F767CB12CCEA /* Pods */,
+				04A0507B90CD21A3179B006B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +83,7 @@
 				30A8AF4C20253D8C00888FE6 /* controllers */,
 				30A8AF4D20253D9E00888FE6 /* views */,
 				30A8AF3E20253A7600888FE6 /* Assets.xcassets */,
+				3055C3C320269A48003A44BD /* businfo.csv */,
 				30A8AF3720253A7600888FE6 /* AppDelegate.swift */,
 				30A8AF4020253A7600888FE6 /* LaunchScreen.storyboard */,
 				30A8AF4320253A7600888FE6 /* Info.plist */,
@@ -71,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				30A8AF4A20253D8000888FE6 /* model.swift */,
+				30A8AF4E2025B38600888FE6 /* busInfoBank.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -78,7 +103,7 @@
 		30A8AF4C20253D8C00888FE6 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				30A8AF3920253A7600888FE6 /* ViewController.swift */,
+				30A8AF3920253A7600888FE6 /* TableViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -87,8 +112,19 @@
 			isa = PBXGroup;
 			children = (
 				30A8AF3B20253A7600888FE6 /* Main.storyboard */,
+				30A8AF502025B96300888FE6 /* BusInfoTableViewCell.swift */,
+				30A8AF512025B96300888FE6 /* BusInfoTableViewCell.xib */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		D6D1A9E962D5F767CB12CCEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				274C0637BA4672C54DFB00A8 /* Pods-MyBusTime.debug.xcconfig */,
+				8F67337FF6EB3C38B7707288 /* Pods-MyBusTime.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30A8AF4620253A7600888FE6 /* Build configuration list for PBXNativeTarget "MyBusTime" */;
 			buildPhases = (
+				56ED9E0F5EFAD56B89030359 /* [CP] Check Pods Manifest.lock */,
 				30A8AF3020253A7600888FE6 /* Sources */,
 				30A8AF3120253A7600888FE6 /* Frameworks */,
 				30A8AF3220253A7600888FE6 /* Resources */,
+				28BF8148BE45FFB9EC029F5A /* [CP] Embed Pods Frameworks */,
+				E4FD8CC50E74E05D5E73B4B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,19 +191,85 @@
 			files = (
 				30A8AF4220253A7600888FE6 /* LaunchScreen.storyboard in Resources */,
 				30A8AF3F20253A7600888FE6 /* Assets.xcassets in Resources */,
+				3055C3C420269A48003A44BD /* businfo.csv in Resources */,
+				30A8AF532025B96300888FE6 /* BusInfoTableViewCell.xib in Resources */,
 				30A8AF3D20253A7600888FE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28BF8148BE45FFB9EC029F5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyBusTime/Pods-MyBusTime-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyBusTime/Pods-MyBusTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56ED9E0F5EFAD56B89030359 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyBusTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FD8CC50E74E05D5E73B4B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyBusTime/Pods-MyBusTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30A8AF3020253A7600888FE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A8AF3A20253A7600888FE6 /* ViewController.swift in Sources */,
+				30A8AF522025B96300888FE6 /* BusInfoTableViewCell.swift in Sources */,
+				30A8AF3A20253A7600888FE6 /* TableViewController.swift in Sources */,
 				30A8AF4B20253D8000888FE6 /* model.swift in Sources */,
+				30A8AF4F2025B38600888FE6 /* busInfoBank.swift in Sources */,
 				30A8AF3820253A7600888FE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +405,7 @@
 		};
 		30A8AF4720253A7600888FE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274C0637BA4672C54DFB00A8 /* Pods-MyBusTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +421,7 @@
 		};
 		30A8AF4820253A7600888FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F67337FF6EB3C38B7707288 /* Pods-MyBusTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
