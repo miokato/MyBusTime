@@ -58,6 +58,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		306661DF2026EE8200B616D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30A8AF4020253A7600888FE6 /* LaunchScreen.storyboard */,
+				30A8AF4320253A7600888FE6 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		30A8AF2B20253A7600888FE6 = {
 			isa = PBXGroup;
 			children = (
@@ -79,43 +88,42 @@
 		30A8AF3620253A7600888FE6 /* MyBusTime */ = {
 			isa = PBXGroup;
 			children = (
-				30A8AF4920253B2B00888FE6 /* models */,
-				30A8AF4C20253D8C00888FE6 /* controllers */,
-				30A8AF4D20253D9E00888FE6 /* views */,
-				30A8AF3E20253A7600888FE6 /* Assets.xcassets */,
+				30A8AF4C20253D8C00888FE6 /* controller */,
+				30A8AF4920253B2B00888FE6 /* model */,
+				30A8AF4D20253D9E00888FE6 /* view */,
 				3055C3C52026C9E1003A44BD /* businfo.csv */,
-				30A8AF3720253A7600888FE6 /* AppDelegate.swift */,
-				30A8AF4020253A7600888FE6 /* LaunchScreen.storyboard */,
-				30A8AF4320253A7600888FE6 /* Info.plist */,
+				306661DF2026EE8200B616D1 /* Supporting Files */,
 			);
 			path = MyBusTime;
 			sourceTree = "<group>";
 		};
-		30A8AF4920253B2B00888FE6 /* models */ = {
+		30A8AF4920253B2B00888FE6 /* model */ = {
 			isa = PBXGroup;
 			children = (
 				30A8AF4A20253D8000888FE6 /* model.swift */,
 				30A8AF4E2025B38600888FE6 /* busInfoBank.swift */,
 			);
-			path = models;
+			path = model;
 			sourceTree = "<group>";
 		};
-		30A8AF4C20253D8C00888FE6 /* controllers */ = {
+		30A8AF4C20253D8C00888FE6 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				30A8AF3720253A7600888FE6 /* AppDelegate.swift */,
 				30A8AF3920253A7600888FE6 /* TableViewController.swift */,
 			);
-			path = controllers;
+			path = controller;
 			sourceTree = "<group>";
 		};
-		30A8AF4D20253D9E00888FE6 /* views */ = {
+		30A8AF4D20253D9E00888FE6 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				30A8AF3B20253A7600888FE6 /* Main.storyboard */,
 				30A8AF502025B96300888FE6 /* BusInfoTableViewCell.swift */,
 				30A8AF512025B96300888FE6 /* BusInfoTableViewCell.xib */,
+				30A8AF3E20253A7600888FE6 /* Assets.xcassets */,
 			);
-			path = views;
+			path = view;
 			sourceTree = "<group>";
 		};
 		D6D1A9E962D5F767CB12CCEA /* Pods */ = {
@@ -415,7 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.miok.MyBusTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.miok.MyBusTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

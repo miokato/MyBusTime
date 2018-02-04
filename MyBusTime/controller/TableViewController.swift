@@ -22,7 +22,7 @@ class ViewController: UITableViewController {
         self.tableView.register(UINib(nibName: "BusInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "busInfoCell")
         
         // 時刻表登録処理
-        // registerBusInfo(realm: realm)
+        //registerBusInfo(realm: realm)
         
         loadBusInfo()
     }

@@ -40,7 +40,7 @@
                                 <action selector="refreshBtnPressed:" destination="z9T-wL-lnx" id="4fj-fg-hVt"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Change" style="plain" id="1nO-TR-pmb">
+                        <barButtonItem key="rightBarButtonItem" title="Change" style="done" id="1nO-TR-pmb">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="changeBtnPressed:" destination="z9T-wL-lnx" id="qIs-8D-4Ls"/>
