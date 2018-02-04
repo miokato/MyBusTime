@@ -8,7 +8,7 @@
 
 import UIKit
 import RealmSwift
-import CSV
+import ChameleonFramework
 
 class ViewController: UITableViewController {
     
@@ -21,6 +21,8 @@ class ViewController: UITableViewController {
         self.tableView.rowHeight = 90
         self.tableView.register(UINib(nibName: "BusInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "busInfoCell")
         
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatWhite
+
         // 時刻表登録処理
         //registerBusInfo(realm: realm)
         
@@ -55,21 +57,21 @@ class ViewController: UITableViewController {
         if day==1 || day==7 { // 週末
             if isGoHome {
                 busInfoList = realm.objects(BusInfo.self)
-                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "kamakura", "weekend")
+                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "home", "weekend")
                     .sorted(byKeyPath: "t", ascending: true)
             } else {
                 busInfoList = realm.objects(BusInfo.self)
-                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "home", "weekend")
+                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "kamakura", "weekend")
                     .sorted(byKeyPath: "t", ascending: true)
             }
         } else { // 通常日
             if isGoHome {
                 busInfoList = realm.objects(BusInfo.self)
-                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "kamakura", "weekday")
+                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "home", "weekday")
                     .sorted(byKeyPath: "t", ascending: true)
             } else {
                 busInfoList = realm.objects(BusInfo.self)
-                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "home", "weekday")
+                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "kamakura", "weekday")
                     .sorted(byKeyPath: "t", ascending: true)
             }
         }
@@ -81,6 +83,15 @@ class ViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "busInfoCell", for: indexPath) as! BusInfoTableViewCell
         if let businfo = busInfoList?[indexPath.row] {
+            
+            if businfo.direction == "kamakura" {
+                cell.backgroundColor = UIColor.flatSkyBlue
+                cell.type.textColor = UIColor.flatYellow
+            } else {
+                cell.backgroundColor = UIColor.flatMaroon
+                cell.type.textColor = UIColor.flatSand
+            }
+            
             var time_string = ""
             if businfo.hour < 10 && businfo.minute < 10 {
                 time_string = "0\(businfo.hour) : 0\(businfo.minute)"
