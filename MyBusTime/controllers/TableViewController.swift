@@ -22,7 +22,7 @@ class ViewController: UITableViewController {
         self.tableView.register(UINib(nibName: "BusInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "busInfoCell")
         
         // 時刻表登録処理
-        //registerBusInfo(realm: realm)
+        // registerBusInfo(realm: realm)
         
         loadBusInfo()
     }
@@ -49,13 +49,31 @@ class ViewController: UITableViewController {
         let hour = calendar.component(.hour, from: date)
         let minute = calendar.component(.minute, from: date)
         let total = hour * 60 + minute
-        
+        let day = calendar.component(.weekday, from: date)
+
         // 現在時刻から2時間後までの出発バスを取得
-        if isGoHome {
-            busInfoList = realm.objects(BusInfo.self).filter("t > %@ && t < %@ && direction == %@", total, total + 120, "kamakura")
-        } else {
-            busInfoList = realm.objects(BusInfo.self).filter("t > %@ && t < %@ && direction == %@", total, total + 120, "home")
+        if day==1 || day==7 { // 週末
+            if isGoHome {
+                busInfoList = realm.objects(BusInfo.self)
+                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "kamakura", "weekend")
+                    .sorted(byKeyPath: "t", ascending: true)
+            } else {
+                busInfoList = realm.objects(BusInfo.self)
+                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "home", "weekend")
+                    .sorted(byKeyPath: "t", ascending: true)
+            }
+        } else { // 通常日
+            if isGoHome {
+                busInfoList = realm.objects(BusInfo.self)
+                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "kamakura", "weekday")
+                    .sorted(byKeyPath: "t", ascending: true)
+            } else {
+                busInfoList = realm.objects(BusInfo.self)
+                    .filter("t > %@ && t < %@ && direction == %@ && type == %@", total, total + 120, "home", "weekday")
+                    .sorted(byKeyPath: "t", ascending: true)
+            }
         }
+        
         tableView.reloadData()
     }
     
@@ -63,10 +81,23 @@ class ViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "busInfoCell", for: indexPath) as! BusInfoTableViewCell
         if let businfo = busInfoList?[indexPath.row] {
-            let time_string = "\(businfo.hour) : \(businfo.minute)"
-            
+            var time_string = ""
+            if businfo.hour < 10 && businfo.minute < 10 {
+                time_string = "0\(businfo.hour) : 0\(businfo.minute)"
+            } else if businfo.hour < 10 {
+                time_string = "0\(businfo.hour) : \(businfo.minute)"
+            } else if businfo.minute < 10 {
+                time_string = "\(businfo.hour) : 0\(businfo.minute)"
+            } else {
+                time_string = "\(businfo.hour) : \(businfo.minute)"
+            }
             cell.timeLabel?.text = time_string
-            cell.totalTime?.text = String(businfo.t)
+            
+            if businfo.is_kuhonji == "TRUE" {
+                cell.type.text = "九品寺"
+            } else {
+                cell.type.text = ""
+            }
             
             if businfo.direction == "kamakura" {
                 cell.directionLabel.text = "鎌倉行き"

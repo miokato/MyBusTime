@@ -12,7 +12,7 @@ class BusInfoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var directionLabel: UILabel!
-    @IBOutlet weak var totalTime: UILabel!
+    @IBOutlet weak var type: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

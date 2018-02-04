@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3055C3C420269A48003A44BD /* businfo.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3055C3C320269A48003A44BD /* businfo.csv */; };
+		3055C3C62026C9E1003A44BD /* businfo.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3055C3C52026C9E1003A44BD /* businfo.csv */; };
 		30A8AF3820253A7600888FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF3720253A7600888FE6 /* AppDelegate.swift */; };
 		30A8AF3A20253A7600888FE6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF3920253A7600888FE6 /* TableViewController.swift */; };
 		30A8AF3D20253A7600888FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A8AF3B20253A7600888FE6 /* Main.storyboard */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		274C0637BA4672C54DFB00A8 /* Pods-MyBusTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBusTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyBusTime/Pods-MyBusTime.debug.xcconfig"; sourceTree = "<group>"; };
-		3055C3C320269A48003A44BD /* businfo.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = businfo.csv; sourceTree = "<group>"; };
+		3055C3C52026C9E1003A44BD /* businfo.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = businfo.csv; path = ../../../../Downloads/businfo.csv; sourceTree = "<group>"; };
 		30A8AF3420253A7600888FE6 /* MyBusTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBusTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A8AF3720253A7600888FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30A8AF3920253A7600888FE6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 				30A8AF4C20253D8C00888FE6 /* controllers */,
 				30A8AF4D20253D9E00888FE6 /* views */,
 				30A8AF3E20253A7600888FE6 /* Assets.xcassets */,
-				3055C3C320269A48003A44BD /* businfo.csv */,
+				3055C3C52026C9E1003A44BD /* businfo.csv */,
 				30A8AF3720253A7600888FE6 /* AppDelegate.swift */,
 				30A8AF4020253A7600888FE6 /* LaunchScreen.storyboard */,
 				30A8AF4320253A7600888FE6 /* Info.plist */,
@@ -191,7 +191,7 @@
 			files = (
 				30A8AF4220253A7600888FE6 /* LaunchScreen.storyboard in Resources */,
 				30A8AF3F20253A7600888FE6 /* Assets.xcassets in Resources */,
-				3055C3C420269A48003A44BD /* businfo.csv in Resources */,
+				3055C3C62026C9E1003A44BD /* businfo.csv in Resources */,
 				30A8AF532025B96300888FE6 /* BusInfoTableViewCell.xib in Resources */,
 				30A8AF3D20253A7600888FE6 /* Main.storyboard in Resources */,
 			);

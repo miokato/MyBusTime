@@ -18,4 +18,5 @@ class BusInfo: Object {
     @objc dynamic var t: Int = 0
     @objc dynamic var is_kuhonji: String = ""
     @objc dynamic var direction: String = ""
+    @objc dynamic var type: String = ""
 }

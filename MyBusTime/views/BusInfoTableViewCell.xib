@@ -32,10 +32,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giK-wX-kmG">
-                        <rect key="frame" x="330" y="35" width="42" height="21"/>
+                        <rect key="frame" x="289" y="11" width="83" height="68"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 : 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3X-S9-Nb3">
@@ -55,7 +55,7 @@
             <connections>
                 <outlet property="directionLabel" destination="4am-TR-UAE" id="kAZ-q9-zr6"/>
                 <outlet property="timeLabel" destination="x3X-S9-Nb3" id="UMC-7c-31Z"/>
-                <outlet property="totalTime" destination="giK-wX-kmG" id="12M-8H-w4s"/>
+                <outlet property="type" destination="giK-wX-kmG" id="MuB-D6-Q3g"/>
             </connections>
             <point key="canvasLocation" x="84" y="77"/>
         </tableViewCell>

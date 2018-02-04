@@ -33,6 +33,7 @@ func registerBusInfo(realm: Realm) {
         businfo.t = businfo.hour * 60 + businfo.minute
         businfo.is_kuhonji = row[2]
         businfo.direction = row[3]
+        businfo.type = row[4]
 
         try! realm.write {
             realm.add(businfo)
