@@ -15,20 +15,29 @@ class ViewController: UITableViewController {
     let realm = try! Realm()
     var busInfoList: Results<BusInfo>?
     var isGoHome: Bool = false
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.rowHeight = 90
         self.tableView.register(UINib(nibName: "BusInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "busInfoCell")
         
         self.navigationController?.navigationBar.barTintColor = UIColor.flatWhite
-
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
+        self.view.addSubview(refreshControl!)
         // 時刻表登録処理
         //registerBusInfo(realm: realm)
         
         loadBusInfo()
     }
-
+    
+    @objc private func refreshData(_ sender: UIRefreshControl) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.loadBusInfo()
+            sender.endRefreshing()
+        })
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
