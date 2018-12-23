@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		306661E82026FD1300B616D1 /* businfo.csv in Resources */ = {isa = PBXBuildFile; fileRef = 306661E72026FD1300B616D1 /* businfo.csv */; };
+		300DAE6921CF27C4001DC02D /* businfo.csv in Resources */ = {isa = PBXBuildFile; fileRef = 300DAE6821CF27C4001DC02D /* businfo.csv */; };
 		30A8AF3820253A7600888FE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF3720253A7600888FE6 /* AppDelegate.swift */; };
 		30A8AF3A20253A7600888FE6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A8AF3920253A7600888FE6 /* TableViewController.swift */; };
 		30A8AF3D20253A7600888FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A8AF3B20253A7600888FE6 /* Main.storyboard */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		274C0637BA4672C54DFB00A8 /* Pods-MyBusTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBusTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyBusTime/Pods-MyBusTime.debug.xcconfig"; sourceTree = "<group>"; };
-		306661E72026FD1300B616D1 /* businfo.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = businfo.csv; sourceTree = SOURCE_ROOT; };
+		300DAE6821CF27C4001DC02D /* businfo.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = businfo.csv; sourceTree = "<group>"; };
 		30A8AF3420253A7600888FE6 /* MyBusTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBusTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A8AF3720253A7600888FE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30A8AF3920253A7600888FE6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 				306661DF2026EE8200B616D1 /* Supporting Files */,
 				30A8AF4320253A7600888FE6 /* Info.plist */,
 				30A8AF3E20253A7600888FE6 /* Assets.xcassets */,
-				306661E72026FD1300B616D1 /* businfo.csv */,
+				300DAE6821CF27C4001DC02D /* businfo.csv */,
 			);
 			path = MyBusTime;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "mio kato";
 				TargetAttributes = {
 					30A8AF3320253A7600888FE6 = {
@@ -199,7 +199,7 @@
 			files = (
 				30A8AF4220253A7600888FE6 /* LaunchScreen.storyboard in Resources */,
 				30A8AF3F20253A7600888FE6 /* Assets.xcassets in Resources */,
-				306661E82026FD1300B616D1 /* businfo.csv in Resources */,
+				300DAE6921CF27C4001DC02D /* businfo.csv in Resources */,
 				30A8AF532025B96300888FE6 /* BusInfoTableViewCell.xib in Resources */,
 				30A8AF3D20253A7600888FE6 /* Main.storyboard in Resources */,
 			);
@@ -217,7 +217,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyBusTime/Pods-MyBusTime-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -225,7 +224,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -318,6 +316,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -325,6 +324,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -375,6 +375,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -382,6 +383,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

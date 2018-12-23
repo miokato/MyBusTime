@@ -18,10 +18,11 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerBusInfo(realm: realm)
         self.tableView.rowHeight = 90
         self.tableView.register(UINib(nibName: "BusInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "busInfoCell")
         
-        self.navigationController?.navigationBar.barTintColor = UIColor.flatWhite
+        self.navigationController?.navigationBar.barTintColor = UIColor.flatWhite()
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
         self.view.addSubview(refreshControl!)
@@ -94,11 +95,11 @@ class ViewController: UITableViewController {
         if let businfo = busInfoList?[indexPath.row] {
             
             if businfo.direction == "kamakura" {
-                cell.backgroundColor = UIColor.flatSkyBlue
-                cell.type.textColor = UIColor.flatYellow
+                cell.backgroundColor = UIColor.flatSkyBlue()
+                cell.type.textColor = UIColor.flatYellow()
             } else {
-                cell.backgroundColor = UIColor.flatMaroon
-                cell.type.textColor = UIColor.flatSand
+                cell.backgroundColor = UIColor.flatMaroon()
+                cell.type.textColor = UIColor.flatSand()
             }
             
             var time_string = ""
